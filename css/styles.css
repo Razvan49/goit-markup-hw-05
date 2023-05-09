@@ -11,6 +11,7 @@
   --social-icons--hover-color: #fff;
   --social-icons--background-color: #2196f3;
   --social-mail-icons--normal-color: #757575;
+  --label-color: #fff;
 }
 
 body {
@@ -112,6 +113,8 @@ ul {
 .main-navigation a:focus {
   color: var(--link-active-color);
   outline: 0;
+  animation-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-active-bar {
@@ -128,6 +131,8 @@ ul {
   top: 46px;
   left: 0;
   border-radius: 2px;
+  animation-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .super-nav-class {
@@ -159,18 +164,8 @@ ul {
 .global-header a.mail:focus {
   color: var(--link-active-color);
   outline: 0;
-}
-
-.global-header a.mail:hover::after,
-.global-header a.mail:focus::after {
-  content: "";
-  position: absolute;
-  height: 4px;
-  width: 100%;
-  background-color: var(--link-active-color);
-  top: 46px;
-  left: 0;
-  border-radius: 2px;
+  animation-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .global-header a.phone-number {
@@ -188,18 +183,8 @@ ul {
 .global-header a.phone-number:hover,
 .global-header a.phone-number:focus {
   color: var(--link-active-color);
-}
-
-.global-header a.phone-number:hover::after,
-.global-header a.phone-number:focus::after {
-  content: "";
-  position: absolute;
-  height: 4px;
-  width: 100%;
-  background-color: var(--link-active-color);
-  top: 46px;
-  left: 0;
-  border-radius: 2px;
+  animation-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact .mail svg {
@@ -219,7 +204,7 @@ ul {
   background: var(--dark-gray-section-color);
   text-align: center;
   min-height: 100%;
-  background: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url("../images/background2.jpg");
   background-repeat: no-repeat;
 }
@@ -239,6 +224,8 @@ ul {
 .request-button:focus {
   background: #fff;
   color: #000000;
+  animation-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* SECOND SECTION */
@@ -285,6 +272,27 @@ ul {
   padding-top: 0;
 }
 
+.thumb {
+  text-align: center;
+  position: relative;
+}
+.label {
+  position: absolute;
+  background: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  padding: 27px;
+  top: 224px;
+  left: 0;
+  margin: 0;
+
+  color: var(--label-color);
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
 /* FOURTH SECTION  */
 
 .fourth-section {
@@ -357,6 +365,8 @@ ul li p {
   background-color: var(--social-icons--background-color);
   border-radius: 50%;
   outline: 0;
+  animation-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* FIFTH SECTION  */
@@ -386,6 +396,8 @@ ul li p {
   color: var(--social-icons--background-color);
   border: 1px solid var(--social-icons--background-color);
   cursor: pointer;
+  animation-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* GLOBAL FOOTER */
 
@@ -414,6 +426,8 @@ ul li p {
 address a:hover,
 address a:focus {
   color: #fff;
+  animation-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .global-footer .logo {
@@ -482,6 +496,8 @@ address a:focus {
   background-color: var(--social-icons--background-color);
   border-radius: 50%;
   outline: 0;
+  animation-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* PORTFOLIO PAGE */
@@ -521,6 +537,8 @@ address a:focus {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   color: #fff;
+  animation-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .category-flex {
@@ -559,4 +577,6 @@ address a:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
+  animation-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
