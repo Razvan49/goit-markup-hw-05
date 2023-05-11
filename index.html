@@ -57,7 +57,7 @@
             EFFECTIVE SOLUTIONS FOR <br />
             YOUR BUSINESS
           </h1>
-          <button type="button" class="request-button">Request our service</button>
+          <button type="button" data-modal-open class="request-button">Request our service</button>
         </div>
       </section>
       <!-- SECOND SECTION | Contine cele mai importante calitati regasite in cadrul studioului -->
@@ -344,5 +344,14 @@
         </div>
       </div>
     </footer>
+    <!-- MODAL -->
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-content">
+        <button class="close-btn" data-modal-close>&times;</button>
+        <div class="inside-content">Continutul modalului</div>
+      </div>
+    </div>
+
+    <script src="./js/modal.js" type="text/javascript"></script>
   </body>
 </html>
